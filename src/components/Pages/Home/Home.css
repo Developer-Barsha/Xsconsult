@@ -1,0 +1,53 @@
+.grid-img{
+    position: relative;
+    z-index: 10;
+}
+.grid-img img{
+    position: relative;
+    z-index: 10;
+}
+
+.img-bg{
+    width: 447px;
+    height: 598px;
+    border-radius: 84.6899px 0px;
+    position: absolute;
+    bottom: 0px;
+    z-index: 1;
+}
+
+.banner .img-bg{
+    background: linear-gradient(180deg, #C0E2F7 0%, #4E83A4 100%);
+    right: 50px;
+}
+
+.curriculam .img-bg{
+    background: linear-gradient(180deg, #C0E2F7 0%, #47AB5D 100%);
+    left: 50px;
+}
+
+.grid-sec h1 span, .guide h1 span{
+    color: #71B131;
+}
+
+.brands img{
+    margin: auto;
+}
+
+@media screen and (max-width:900px) {
+    .banner .grid-img{
+        margin-top: 30px;
+    }
+
+    .curriculam .grid-img{
+        margin-bottom: 30px;
+    }
+
+    .banner .img-bg{
+        right: 20px;
+    }
+    
+    .curriculam .img-bg{
+        left: 20px;
+    }
+}
