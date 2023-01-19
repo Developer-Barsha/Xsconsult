@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import curriculamEllipse from './../../../images/curriculam-ellipse.png';
 import 'react-phone-number-input/style.css';
 import PhoneInput from 'react-phone-number-input';
+import './EnrollNow.css';
 
 const EnrollNow = () => {    
     const [value, setValue] = useState();
@@ -9,7 +10,7 @@ const EnrollNow = () => {
     useEffect(()=>{
         fetch('https://restcountries.com/v3.1/all')
         .then(res=>res.json())
-        .then(data=>console.log(data))
+        .then(data=>setCountries(data))
     },[]);
 
     return (
@@ -25,7 +26,7 @@ const EnrollNow = () => {
             </div>
             <div className="form w-full lg:w-2/3 mt-5 border p-10 rounded-2xl border-white">
                 <h1 className="text-3xl mb-10">Fill in your details before payment</h1>
-                <div className="w-full flex gap-5 mb-5">
+                <div className="w-full flex lg:flex-row flex-col gap-5 mb-5">
                     <div className="w-full lg:w-1/2">
                         <label htmlFor="First-Name">First Name</label>
                         <input type="text" className="w-full" placeholder='First Name' />
@@ -35,7 +36,7 @@ const EnrollNow = () => {
                         <input type="text" className="w-full" placeholder='Last Name' />
                     </div>
                 </div>
-                <div className="w-full flex gap-5 mb-5">
+                <div className="w-full flex lg:flex-row flex-col gap-5 mb-5">
                     <div className="w-full lg:w-1/2">
                         <label htmlFor="Phone-Number">Phone Number</label>
                         {/* <input type="text" className="w-full" placeholder='Phone Number' /> */}
@@ -50,15 +51,15 @@ const EnrollNow = () => {
                         <input type="email" className="w-full" placeholder='Email Address' />
                     </div>
                 </div>
-                <div className="w-full flex gap-5 mb-5">
+                <div className="w-full flex lg:flex-row flex-col gap-5 mb-5">
                     <div className="w-full flex flex-col lg:w-1/2 gap-2">
                         <label htmlFor="Country">Country</label>
                         <div className="relative">
                             <select name="" id="" className='w-full px-2 py-3 rounded-md outline-none border-none cursor-pointer bg-black'>
                                 <option value="Bangladesh">Bangladesh</option>
-                                {/* {countries?.map(country=>{
-                                    return <option value={country?.name?.common}> <img src={country?.flags?.png} /> {country?.name?.common}</option> 
-                                })*/}
+                                {countries?.map(country=>{
+                                    return <option value={country?.name?.common}> {country?.name?.common}</option> 
+                                })}
                                 <option value="India">India</option>
                                 <option value="USA">USA</option>
                                 <option value="UK">UK</option>
@@ -73,9 +74,9 @@ const EnrollNow = () => {
                         <input type="text" className="w-full" placeholder='Whatsapp Number' />
                     </div>
                 </div>
-                <div className="w-full flex gap-5 mb-5">
+                <div className="w-full flex lg:flex-row flex-col gap-5 mb-5">
                     <div className="w-full lg:w-1/2">
-                        <label htmlFor="Country">Educational Background</label>
+                        <label htmlFor="Educational Background">Educational Background</label>
                         <input type="text" className="w-full" placeholder='Country' />
                     </div>
                     <div className="w-full lg:w-1/2">
