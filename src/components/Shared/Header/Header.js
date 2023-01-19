@@ -26,6 +26,7 @@ const Header = () => {
             </header>
 
             <header className='lg:hidden flex'>
+                <Link tp='/'><img src={logo} alt="" /></Link>
                 {/* menu hide and show icon */}
                 <button onClick={() => setShowMenu(!showMenu)} className='lg:hidden text-2xl absolute' style={{ zIndex: 1000 }}>
                     {showMenu ?
@@ -38,16 +39,16 @@ const Header = () => {
                 {/* header nav */}
                 {showMenu &&
                     <div className='lg:w-0 transition-all flex flex-col items-center text-center justify-center gap-10 bg-black w-full h-screen fixed' style={{ zIndex: 100 }}>
-                        <ul className='flex flex-col gap-10'>
+                        <ul onClick={()=>setShowMenu(false)} className='flex flex-col gap-10'>
                             <li><Link to='/about'>About Us</Link></li>
                             <li><Link to='/contact'>Contact Us</Link></li>
                             <li><Link to='/faq'>FAQ</Link></li>
                             <li><Link to='/pricing'>Pricing</Link></li>
                             <li><Link to='/curriculam'>Curriculam</Link></li>
                         </ul>
-                        <div className="button">
+                        <div className="button" onClick={()=>setShowMenu(false)} >
                             <button>
-                                Eroll Now
+                                <Link to='/enroll-now'>Eroll Now</Link>
                             </button>
                         </div>
                     </div>

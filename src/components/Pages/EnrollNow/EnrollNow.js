@@ -1,7 +1,10 @@
 import React, {useState, useEffect} from 'react';
 import curriculamEllipse from './../../../images/curriculam-ellipse.png';
+import 'react-phone-number-input/style.css';
+import PhoneInput from 'react-phone-number-input';
 
 const EnrollNow = () => {    
+    const [value, setValue] = useState();
     const [countries, setCountries] = useState([]);
     useEffect(()=>{
         fetch('https://restcountries.com/v3.1/all')
@@ -36,6 +39,10 @@ const EnrollNow = () => {
                     <div className="w-full lg:w-1/2">
                         <label htmlFor="Phone-Number">Phone Number</label>
                         <input type="text" className="w-full" placeholder='Phone Number' />
+                        <PhoneInput
+      placeholder="Enter phone number"
+      value={value}
+      onChange={setValue}/>
                     </div>
                     <div className="w-full lg:w-1/2">
                         <label htmlFor="Email-Address">Email Address</label>
@@ -58,6 +65,9 @@ const EnrollNow = () => {
                         <div className="relative">
                             <select name="" id="" className='w-full px-2 py-3 rounded-md outline-none border-none cursor-pointer bg-black'>
                                 <option value="Bangladesh">Bangladesh</option>
+                                {/* {countries?.map(country=>{
+                                    return <option value={country?.name?.common}> <img src={country?.flags?.png} /> {country?.name?.common}</option> 
+                                })*/}
                                 <option value="India">India</option>
                                 <option value="USA">USA</option>
                                 <option value="UK">UK</option>

@@ -3,9 +3,28 @@ header{
     z-index: 1;
 }
 
-header li:hover{
-    border-bottom: 1px solid green;
-    transition:0.5s;
+header li {
+    margin-bottom: 10px;
+}
+
+header li {
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+}
+
+header li::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width .3s;
+}
+
+header li:hover::after {
+    width: 100%;
+    //transition: width .3s;
 }
 
 .button {
