@@ -20,19 +20,19 @@ const Header = () => {
                 </ul>
                 <div className="button">
                     <button>
-                        Eroll Now
+                                <Link to='/enroll-now'>Eroll Now</Link>
                     </button>
                 </div>
             </header>
 
-            <header className='lg:hidden flex'>
-                <Link tp='/'><img src={logo} alt="" /></Link>
+            <header className='lg:hidden flex px-6 py-5'>
+                <Link tp='/'> <img src={logo} alt="" /></Link>
                 {/* menu hide and show icon */}
                 <button onClick={() => setShowMenu(!showMenu)} className='lg:hidden text-2xl absolute' style={{ zIndex: 1000 }}>
                     {showMenu ?
                         <i class="fa-solid fa-xmark fixed top-10 left-10"></i>
                         :
-                        <i class="fa-solid fa-bars fixed top-10 right-10 bg-[#71B131] hover:bg-lime-400 rounded-md p-3"></i>
+                        <i class="fa-solid fa-bars fixed top-6 right-6 bg-[#71B131] hover:bg-lime-400 rounded-md p-3"></i>
                     }
                 </button>
 

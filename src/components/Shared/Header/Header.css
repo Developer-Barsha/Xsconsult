@@ -9,7 +9,7 @@ header li {
 
 header li {
     display: inline-block;
-    color: #000;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -18,13 +18,14 @@ header li::after {
     display: block;
     width: 0;
     height: 2px;
-    background: #000;
+    background: #009A49;
     transition: width .3s;
+    border-radius:10px;
 }
 
 header li:hover::after {
     width: 100%;
-    //transition: width .3s;
+    transition: width .3s;
 }
 
 .button {

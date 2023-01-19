@@ -38,25 +38,16 @@ const EnrollNow = () => {
                 <div className="w-full flex gap-5 mb-5">
                     <div className="w-full lg:w-1/2">
                         <label htmlFor="Phone-Number">Phone Number</label>
-                        <input type="text" className="w-full" placeholder='Phone Number' />
+                        {/* <input type="text" className="w-full" placeholder='Phone Number' /> */}
                         <PhoneInput
       placeholder="Enter phone number"
-      value={value}
+      value={value}      
+      className='input text-white'
       onChange={setValue}/>
                     </div>
                     <div className="w-full lg:w-1/2">
                         <label htmlFor="Email-Address">Email Address</label>
-                        <input type="text" className="w-full" placeholder='Email Address' />
-                    </div>
-                </div>
-                <div className="w-full flex gap-5 mb-5">
-                    <div className="w-full lg:w-1/2">
-                        <label htmlFor="Country">Country</label>
-                        <input type="text" className="w-full" placeholder='Country' />
-                    </div>
-                    <div className="w-full lg:w-1/2">
-                        <label htmlFor="Whatsapp-Number">Whatsapp Number</label>
-                        <input type="text" className="w-full" placeholder='Whatsapp Number' />
+                        <input type="email" className="w-full" placeholder='Email Address' />
                     </div>
                 </div>
                 <div className="w-full flex gap-5 mb-5">
@@ -80,6 +71,19 @@ const EnrollNow = () => {
                     <div className="w-full lg:w-1/2">
                         <label htmlFor="Whatsapp-Number">Whatsapp Number</label>
                         <input type="text" className="w-full" placeholder='Whatsapp Number' />
+                    </div>
+                </div>
+                <div className="w-full flex gap-5 mb-5">
+                    <div className="w-full lg:w-1/2">
+                        <label htmlFor="Country">Educational Background</label>
+                        <input type="text" className="w-full" placeholder='Country' />
+                    </div>
+                    <div className="w-full lg:w-1/2">
+                        <label htmlFor="Whatsapp-Number">Gender</label>
+                            <select name="" id="" className='w-full mt-2 px-2 py-3 rounded-md outline-none border-none cursor-pointer bg-black'>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                            </select>
                     </div>
                 </div>
                 <button className='common-btn text-black mt-8 px-10 flex mx-auto'>Proceed</button>

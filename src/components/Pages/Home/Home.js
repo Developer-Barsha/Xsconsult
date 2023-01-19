@@ -89,11 +89,11 @@ const Home = () => {
             <div className='guide py-10 px-5 lg:px-12'>
                 <h1 className='text-3xl lg:text-5xl text-center'>Guide to a career as <br /> a <span>DevOps engineer</span></h1>
 
-                <div className='grid grid-cols-6 gap-3 py-10'>
+                <div className='grid lg:grid-cols-6 grid-cols-1 gap-3 pr-0 lg:pr-10 py-10'>
                     {steps.map(s => {
-                        return <div className={`${steps.indexOf(s) % 2 === 0 && 'mt-20'} flex gap-2`}>
-                            {steps.indexOf(s)!==0 && <img src={arrow} className={`${steps.indexOf(s) % 2 === 0 && 'rotate-45'} step-main flex gap-2 arrow`} alt="" />}
-                            <div className="step relative pt-6">
+                        return <div className={`${steps.indexOf(s) % 2 === 0 && 'mt-5 lg:mt-20'} flex flex-col lg:flex-row items-center gap-10 lg:gap-1 justify-end`}>
+                            {steps.indexOf(s)!==0 && <img src={arrow} className={`${steps.indexOf(s) % 2 === 0 && 'rotate-45 mt-0'} step-main flex gap-2 mt-5 lg:mt-20 arrow`} alt="" />}
+                            <div className="step relative pt-12">
                                 <h1 className="text-xl px-2 bg-gradient-to-t to-[#CCCCCC] from-[#009A49] rounded-lg absolute -top-5">STEP {s?.step}</h1>
                                 <p className='px-4 text-center'>{s?.des}</p>
                             </div>
