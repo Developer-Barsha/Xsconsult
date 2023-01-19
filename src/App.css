@@ -1,31 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
 
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-.App{
+.App {
   background-color: #141021;
   font-family: 'IBM Plex Sans', sans-serif;
   color: white;
 }
 
-p{
+h1 span {
+  color: #71B131;
+}
+
+p {
   color: #A1A1AA;
 }
 
-ul{
+ul {
   display: flex;
 }
 
-button{
+button {
   text-transform: uppercase;
   transition: 0.2s;
 }
 
-.common-btn{
+.common-btn {
   background-color: #71B131;
   border-radius: 50px;
   padding: 10px 20px;
@@ -33,7 +37,7 @@ button{
   width: fit-content;
 }
 
-.common-btn:hover{
+.common-btn:hover {
   color: #71B131;
   background-color: white;
 }

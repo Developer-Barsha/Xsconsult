@@ -3,6 +3,11 @@ header{
     z-index: 1;
 }
 
+header li:hover{
+    border-bottom: 1px solid green;
+    transition:0.5s;
+}
+
 .button {
     position: relative;
     border-radius: 30px;
