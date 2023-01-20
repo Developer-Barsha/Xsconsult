@@ -14,7 +14,7 @@ const EnrollNow = () => {
     },[]);
 
     return (
-        <div className='lg:p-20 p-5 grid grid-cols-1 gap-10'>
+        <div className='lg:p-20 px-5 py-16 grid grid-cols-1 gap-10'>
             <div className='relative'>
                 <img src={curriculamEllipse} className='absolute -top-28 left-0' width={'50%'} alt="" />
                 <h1 className="text-3xl lg:text-5xl text-[#71B131] pb-5">Pricing for our DevOps Program</h1>

@@ -88,8 +88,8 @@ const Curriculam = () => {
             </div>
 
             {faqs.map(f => {
-                return <div className={`${showAns == f?.id && 'bg-lime-500 rounded-none rounded-t-lg'} w-full border border-lime-500 px-8 my-4 rounded-lg`}>
-                    <p style={{fontSize:'20px'}} onClick={() => toogleShowHide(f?.id)} className={`${showAns !== f?.id && 'text-black'} cursor-pointer text-white flex justify-between items-center py-6`}>{f?.question} {showAns == f?.id ? <HiMinus className='text-white text-2xl' /> : <HiPlus className='text-white text-2xl' />}</p>
+                return <div className={`${showAns == f?.id && 'bg-lime-500 rounded-b-none rounded-t-lg'} w-full border border-lime-500 px-8 my-4 rounded-lg`}>
+                    <p style={{fontSize:'20px'}} onClick={() => toogleShowHide(f?.id)} className={`${showAns == f?.id ? 'text-black' : 'text-white'} cursor-pointer flex justify-between items-center py-6`}>{f?.question} {showAns == f?.id ? <HiMinus className='text-white text-2xl' /> : <HiPlus className='text-white text-2xl' />}</p>
                     {showAns == f?.id && <p className='text-white py-6'>{f?.answer}</p>}
                 </div>
             })}

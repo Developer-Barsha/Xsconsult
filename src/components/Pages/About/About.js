@@ -27,9 +27,11 @@ const About = () => {
                 </div>
             </div>
 
-            <div className="bg-black flex flex-col gap-3 m-5 lg:m-12 pt-12 px-12 text-center">
-                <h1 className="text-2xl lg:text-5xl pb-5">Meet Our Team</h1>
-                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. </p>
+            <div className="bg-black flex flex-col gap-3 m-5 lg:m-12 pt-12 text-center">
+                <div className='pb-10 px-12'>
+                    <h1 className="text-2xl lg:text-5xl pb-5">Meet Our Team</h1>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. </p>
+                </div>
                 <img src={aboutTeam} className='w-full' />
             </div>
 

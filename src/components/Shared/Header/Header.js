@@ -9,7 +9,7 @@ const Header = () => {
     return (
         <section>
             <header className='lg:flex hidden justify-between items-center py-8 px-10'>
-                <Link tp='/'><img src={logo} alt="" /></Link>
+                <Link to='/'><img src={logo} alt="" /></Link>
 
                 <ul className='gap-10'>
                     <li><Link to='/about'>About Us</Link></li>
@@ -26,7 +26,7 @@ const Header = () => {
             </header>
 
             <header className='lg:hidden flex px-6 py-5'>
-                <Link tp='/'> <img src={logo} alt="" /></Link>
+                <Link to='/'> <img src={logo} alt="" /></Link>
                 {/* menu hide and show icon */}
                 <button onClick={() => setShowMenu(!showMenu)} className='lg:hidden text-2xl absolute' style={{ zIndex: 1000 }}>
                     {showMenu ?
@@ -37,8 +37,8 @@ const Header = () => {
                 </button>
 
                 {/* header nav */}
-                {showMenu &&
-                    <div className='lg:w-0 transition-all flex flex-col items-center text-center justify-center gap-10 bg-black w-full h-screen fixed' style={{ zIndex: 100 }}>
+                {showMenu && 
+                    <div className='lg:w-0 transition-all flex flex-col items-center text-center justify-center gap-10 bg-[#141021] w-full h-screen fixed top-0 left-0' style={{ zIndex: 100 }}>
                         <ul onClick={()=>setShowMenu(false)} className='flex flex-col gap-10'>
                             <li><Link to='/about'>About Us</Link></li>
                             <li><Link to='/contact'>Contact Us</Link></li>

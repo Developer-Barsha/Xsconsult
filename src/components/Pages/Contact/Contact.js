@@ -7,7 +7,7 @@ const Contact = () => {
             <div className="w-full lg:w-2/3 form">
                 <h1 className="text-3xl text-[#71B131] mb-4">Need help? Reach out to us</h1>
                 <p>Contact us for more  enquiries.</p>
-                <div className="w-full flex gap-5 mb-5">
+                <div className="w-full flex lg:flex-row flex-col gap-5 my-5">
                     <div className="w-full lg:w-1/2">
                         <label htmlFor="First-Name">First Name</label>
                         <input type="text" className="w-full" placeholder='First Name' />
@@ -17,7 +17,7 @@ const Contact = () => {
                         <input type="text" className="w-full" placeholder='Last Name' />
                     </div>
                 </div>
-                <div className="w-full flex gap-5 mb-5">
+                <div className="w-full flex lg:flex-row flex-col gap-5 mb-5">
                     <div className="w-full lg:w-1/2">
                         <label htmlFor="Email-Address">Email Address</label>
                         <input type="text" className="w-full" placeholder='Email Address' />
