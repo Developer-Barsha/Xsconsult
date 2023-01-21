@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -8,16 +7,16 @@
 
 .App {
   background-color: #141021;
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   color: white;
 }
 
 h1 span {
-  color: #71B131;
+  color: #71b131;
 }
 
 p {
-  color: #A1A1AA;
+  color: #a1a1aa;
 }
 
 ul {
@@ -30,7 +29,7 @@ button {
 }
 
 .common-btn {
-  background-color: #71B131;
+  background-color: #71b131;
   border-radius: 50px;
   padding: 10px 20px;
   color: white;
@@ -38,6 +37,6 @@ button {
 }
 
 .common-btn:hover {
-  color: #71B131;
+  color: #71b131;
   background-color: white;
 }

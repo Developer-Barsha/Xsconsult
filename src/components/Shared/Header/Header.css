@@ -1,55 +1,55 @@
-header{
-    transition: 0.5s;
-    z-index: 1;
+header {
+  transition: 0.5s;
+  z-index: 1;
 }
 
 header li {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 header li {
-    display: inline-block;
-    color: #fff;
-    text-decoration: none;
+  display: inline-block;
+  text-decoration: none;
+}
+header li a {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
 }
 
 header li::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    background: #009A49;
-    transition: width .3s;
-    border-radius:10px;
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #009a49;
+  transition: width 0.3s;
+  border-radius: 10px;
 }
 
 header li:hover::after {
-    width: 100%;
-    transition: width .3s;
+  width: 100%;
+  transition: width 0.3s;
 }
 
 .button {
-    position: relative;
-    border-radius: 30px;
-    z-index: 1;
-    width: fit-content;
+  position: relative;
+
+  border-radius: 50em;
+  z-index: 1;
+  width: fit-content;
+
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(to right, #c0e2f7, #47ab5d) border-box;
+  border-radius: 50em;
+  border: 1px solid transparent;
 }
 
-.button::before{
-    border-radius: 30px;
-    content: "";
-    position: absolute;
-    top: -3%;
-    left: -3%;
-    right: 0;
-    width: 106%;
-    height: 106%;
-    background: linear-gradient(280deg, green, white);
-    z-index: -1;
-}
-
-.button button{
-    background: #141021;
-    border-radius: 30px;
-    padding: 8px 20px;
+.button button {
+  background: #141021;
+  border-radius: 30px;
+  padding: 8px 20px;
 }

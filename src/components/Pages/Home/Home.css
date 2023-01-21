@@ -1,150 +1,164 @@
 .grid-img {
-    position: relative;
+  position: relative;
 }
 
 .grid-img img {
-    position: relative;
-    z-index: 10;
+  position: relative;
+  z-index: 10;
 }
 
 .img-blue-bg,
 .img-green-bg {
-    width: 75%;
-    height: 80%;
-    border-radius: 84.6899px 0px;
-    position: absolute;
-    bottom: 0px;
-    z-index: 1;
-}
-
-.banner .img-blue-bg {
-    background: linear-gradient(180deg, #C0E2F7 0%, #4E83A4 100%);
-    right: 50px;
+  width: 75%;
+  height: 80%;
+  border-radius: 84.6899px 0px;
+  position: absolute;
+  bottom: 0px;
+  z-index: 1;
 }
 
 .banner h1 {
-    line-height: 72px;
+  line-height: 72px;
 }
 
 .project-based h1,
 .curriculam h1,
 .guide h1 {
-    line-height: 62px;
-}
-
-.img-green-bg {
-    background: linear-gradient(180deg, #C0E2F7 0%, #47AB5D 100%);
-    left: 50px;
+  line-height: 62px;
 }
 
 .project-based .img-green-bg {
-    left: 50px;
-    border-radius: 0px 84.6899px;
+  left: 50px;
+  border-radius: 0px 84.6899px;
 }
 
 .brands img {
-    margin: auto;
+  margin: auto;
+}
+.project-base-img {
+  position: relative;
+}
+.project-base-img div {
+  position: absolute;
+  width: 437px;
+  height: 598px;
+  left: 63px;
+  top: 70px;
+
+  background: linear-gradient(180deg, #c0e2f7 0%, #47ab5d 100%);
+  border-radius: 0px 100px 0px 0px;
 }
 
 .video-sec h3 {
-    position: absolute;
-    bottom: 0px;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    background-image: url('./../../../images/overlay.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 20px;
-    padding: 50px;
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-image: url("./../../../images/overlay.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  padding: 50px;
 }
 
 .step {
-    background-image: url('./../../../images/step-bg.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 145px;
-    height: 145px;
-    border-radius: 50%;
-    display: flex;
-    align-items: start;
-    justify-content: center;
+  background-image: url("./../../../images/step-bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 145px;
+  height: 145px;
+  border-radius: 50%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
 }
 
 .arrow {
-    width: 50px;
-    height: 20px;
+  width: 50px;
+  height: 20px;
 }
 
 .play-icon {
-    background-image: url('./../../../images/play-bg.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 250px;
-    height: 250px;
-    top: 170px;
-    left: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background-image: url("./../../../images/play-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 250px;
+  height: 250px;
+  top: 170px;
+  left: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .play-icon:hover {
-    transform: scale(1.02);
-    cursor: pointer;
-    transition: 0.2s;
+  transform: scale(1.02);
+  cursor: pointer;
+  transition: 0.2s;
 }
 
 .alumni-des {
-    width: 799px;
-    display: flex;
-    margin: 0 auto;
+  width: 799px;
+  display: flex;
+  margin: 0 auto;
 }
 
 .avatars img:hover {
-    transform: scale(1.03);
-    transition: 0.2s;
+  transform: scale(1.03);
+  transition: 0.2s;
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width: 600px) {
+  .banner h1,
+  .project-based h1,
+  .curriculam h1,
+  .guide h1 {
+    line-height: 40px;
+  }
 
-    .banner h1,
-    .project-based h1,
-    .curriculam h1,
-    .guide h1 {
-        line-height: 40px;
-    }
+  .project-base-img div {
+    position: absolute;
+    width: 237px;
+    height: 398px;
+    left: 103px;
+    top: 65px;
 
-    .video-sec h3 {
-        padding: 8px;
-        font-size: 12px;
-        border-radius: 10px;
-    }
+    background: linear-gradient(180deg, #c0e2f7 0%, #47ab5d 100%);
+    border-radius: 0px 100px 0px 0px;
+  }
 
-    .project-based .img-green-bg {
-        /* width: 80%; */
-        height: 70%;
-        left: 80px;
-        border-radius: 0px 50px;
-    }
+  .video-sec h3 {
+    padding: 8px;
+    font-size: 12px;
+    border-radius: 10px;
+  }
 
-    .img-blue-bg, .img-green-bg {
-        left: 50px;
-        bottom: 50px;
-    }
+  .project-based .img-green-bg {
+    /* width: 80%; */
+    height: 70%;
+    left: 80px;
+    border-radius: 0px 50px;
+  }
 
-    .alumni-des {
-        width: 100%;
-    }
+  .img-blue-bg,
+  .img-green-bg {
+    left: 50px;
+    bottom: 50px;
+  }
 
-    .play-icon {
-        width: 150px;
-        height: 150px;
-        top: 0px;
-        left: 70px;
-    }
+  .alumni-des {
+    width: 100%;
+  }
 
-    .arrow {
-        transform: rotate(110deg);
-    }
+  .play-icon {
+    width: 150px;
+    height: 150px;
+    top: 0px;
+    left: 70px;
+  }
+
+  .arrow {
+    transform: rotate(110deg);
+  }
 }
